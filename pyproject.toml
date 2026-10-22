@@ -1,0 +1,27 @@
+[project]
+name = "cs229-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "raghav8218", email = "raghavsharma8218@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.4.2",
+    "pypdf>=6.21.2",
+    "chromadb",
+    "langchain-chroma",
+    "langchain-google-genai",
+    "langchain-huggingface",
+    "langchain-text-splitters",
+    "python-dotenv",
+    "sentence-transformers",
+]
+
+[project.scripts]
+cs229-rag = "cs229_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
