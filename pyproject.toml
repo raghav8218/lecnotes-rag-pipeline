@@ -17,6 +17,7 @@ dependencies = [
     "langchain-text-splitters",
     "python-dotenv",
     "sentence-transformers",
+    "fonttools>=4.67.0",
 ]
 
 [project.scripts]
